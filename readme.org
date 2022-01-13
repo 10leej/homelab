@@ -1,2 +1,2 @@
 * Homelab scripts
-This is my personal repo for my homelab scripts I'm also using these in a video series as well on my [[https://yt.10leej.com][YouTube Channel]].
+This is my personal repo for my homelab scripts I'm also using these in a video series as well on my [[https://www.youtube.com/channel/UCNvl_86ygZXRuXjxbONI5jA][YouTube Channel]].
