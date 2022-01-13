@@ -1,0 +1,15 @@
+version: "2"
+services:
+  dokuwiki:
+    image: linuxserver/dokuwiki:version-2020-07-29
+    container_name: dokuwiki
+    restart: unless-stopped
+    environment:
+      - TZ=America/New_York # Specify a timezone to use EG Europe/London.
+      - PUID=1000 # for UserID
+      - PGID=1000 # for GroupID
+    volumes:
+      - /home/joshua/docker/dokuwiki/config:/config # Configuration files.
+    ports:
+      - 443:443/tcp # optional Application HTTPS Port
+      - 80:80/tcp # Application HTTP Port
