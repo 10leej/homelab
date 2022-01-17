@@ -9,7 +9,7 @@ services:
       - PUID=1000 # for UserID
       - PGID=1000 # for GroupID
     volumes:
-      - /home/joshua/docker/dokuwiki/config:/config # Configuration files.
+      - /home/joshua/media/docker/dokuwiki/config:/config # Configuration files.
     ports:
       - 443:443/tcp # optional Application HTTPS Port
       - 80:80/tcp # Application HTTP Port
