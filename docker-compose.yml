@@ -6,8 +6,7 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=Europe/London
-      - JELLYFIN_PublishedServerUrl=192.168.0.5 #optional
+      - TZ=America/New_York
     volumes:
       - /home/joshua/share/containers/jellyfin/config:/config
       - /home/joshua/share/containers/jellyfin/data/tvshows:/data/tvshows
