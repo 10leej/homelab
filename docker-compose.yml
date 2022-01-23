@@ -11,6 +11,7 @@ services:
       - /home/joshua/share/containers/jellyfin/config:/config
       - /home/joshua/share/containers/jellyfin/data/tvshows:/data/tvshows
       - /home/joshua/share/containers/jellyfin/data/movies:/data/movies
+      - /home/joshua/share/containers/jellyfin/data/music:/data/music
     ports:
       - 8096:8096
       - 8920:8920 #optional
