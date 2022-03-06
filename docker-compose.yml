@@ -8,10 +8,10 @@ services:
       - PGID=1000
       - TZ=America/New_York
     volumes:
-      - /home/joshua/share/containers/jellyfin/config:/config
-      - /home/joshua/share/containers/jellyfin/data/tvshows:/data/tvshows
-      - /home/joshua/share/containers/jellyfin/data/movies:/data/movies
-      - /home/joshua/share/containers/jellyfin/data/music:/data/music
+      - /home/joshua/containers/jellyfin/config:/config
+      - /home/joshua/containers/jellyfin/data/tvshows:/data/tvshows
+      - /home/joshua/containers/jellyfin/data/movies:/data/movies
+      - /home/joshua/containers/jellyfin/data/music:/data/music
     ports:
       - 8096:8096
       - 8920:8920 #optional
@@ -25,8 +25,8 @@ services:
       - PGID=1000
       - TZ=America/New_York
     volumes:
-      - /home/joshua/share/containers/nextcloud/config:/config
-      - /home/joshua/share/containers/nextcloud/data:/data
+      - /home/joshua/containers/nextcloud/config:/config
+      - /home/joshua/containers/nextcloud/data:/data
     ports:
       - 443:443
     restart: unless-stopped
@@ -38,9 +38,9 @@ services:
       - PGID=1000
       - TZ=America/New_York
     volumes:
-      - /home/joshua/share/containers/sickchill/config:/config
-      - /home/joshua/share/containers/sickchill/downloads:/downloads
-      - /home/joshua/share/containers/sickchill/tv:/tv
+      - /home/joshua/containers/sickchill/config:/config
+      - /home/joshua/containers/sickchill/downloads:/downloads
+      - /home/joshua/containers/sickchill/tv:/tv
     ports:
       - 8081:8081
     restart: unless-stopped
@@ -52,9 +52,9 @@ services:
       - PGID=1000
       - TZ=America/New_York
     volumes:
-      - /home/joshua/share/containers/transmission/config:/config
-      - /home/joshua/share/containers/transmission/downloads:/downloads
-      - /home/joshua/share/containers/transmission/watch:/watch
+      - /home/joshua/containers/transmission/config:/config
+      - /home/joshua/containers/transmission/downloads:/downloads
+      - /home/joshua/containers/transmission/watch:/watch
     ports:
       - 9091:9091
       - 51413:51413
