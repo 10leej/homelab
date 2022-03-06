@@ -1,22 +1,31 @@
 version: "2"
 services:
-  jellyfin:
-    image: lscr.io/linuxserver/jellyfin
-    container_name: jellyfin
+  nginx:
+    image: lscr.io/linuxserver/nginx
+    container_name: nginx
     environment:
       - PUID=1000
       - PGID=1000
       - TZ=America/New_York
     volumes:
-      - /home/joshua/containers/jellyfin/config:/config
-      - /home/joshua/containers/jellyfin/data/tvshows:/data/tvshows
-      - /home/joshua/containers/jellyfin/data/movies:/data/movies
-      - /home/joshua/containers/jellyfin/data/music:/data/music
+      - /home/joshua/containers/nginx:/config
     ports:
-      - 8096:8096
-      - 8920:8920 #optional
-      - 7359:7359/udp #optional
-      - 1900:1900/udp #option
+      - 80:80
+      - 443:443
+    restart: unless-stopped
+  nextcloud:
+    image: lscr.io/linuxserver/nextcloud
+    container_name: nextcloud
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/New_York
+    volumes:
+      - /home/containers/nextcloud/config:/config
+      - /home/containers/nextcloud/data:/data
+    ports:
+      - 443:8001
+    restart: unless-stopped
   nextcloud:
     image: lscr.io/linuxserver/nextcloud
     container_name: nextcloud
