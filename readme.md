@@ -1,7 +1,7 @@
 # Homelab
 This is my notes and plans for my home infurastructure. I'm gonna keep as much of the publicly "safe to post" data here as I can.
 
-This repo is primarily hosted at [gitlab](https://gitlab.com/10leej/homelab) but a mirror is on [github](https://github.com/10leej/homelab) since it's a popular website.
+This repo is primarily hosted at [GitLab](https://gitlab.com/10leej/homelab) but a mirror is on [GitHub](https://github.com/10leej/homelab) since it's a popular website.
 
 ## System 1: Lab
 OS: Fedora 37
