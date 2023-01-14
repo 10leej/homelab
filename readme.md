@@ -40,7 +40,10 @@ I honestly and truely only use this for seeding Linux Distro's, if I'm gonna tor
 
 
 ## System 2: Backup
+OS: Fedora 37
 
 ## System 3: Webserver
+OS: Debian 11 (Grandfathered)
 
 ## System 4: Private VPS
+OS: Fedora 37
